@@ -13,9 +13,13 @@
 		C01015DF252D2051001CAC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015DD252D2051001CAC80 /* Main.storyboard */; };
 		C01015E1252D2056001CAC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01015E0252D2056001CAC80 /* Assets.xcassets */; };
 		C01015E4252D2056001CAC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015E2252D2056001CAC80 /* LaunchScreen.storyboard */; };
+		F3D9D7E2006AB80A430EBA58 /* Pods_SSN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1A96D70FB7D8B4D20A0C63 /* Pods_SSN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52157F8214737E8A4393EA93 /* Pods-SSN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN.release.xcconfig"; path = "Target Support Files/Pods-SSN/Pods-SSN.release.xcconfig"; sourceTree = "<group>"; };
+		A4592F5B6E24E1A1A2A10C92 /* Pods-SSN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN.debug.xcconfig"; path = "Target Support Files/Pods-SSN/Pods-SSN.debug.xcconfig"; sourceTree = "<group>"; };
+		AC1A96D70FB7D8B4D20A0C63 /* Pods_SSN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01015D4252D2051001CAC80 /* SSN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01015D7252D2051001CAC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C01015D9252D2051001CAC80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D9D7E2006AB80A430EBA58 /* Pods_SSN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91FE62499F7C50E7D85964FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4592F5B6E24E1A1A2A10C92 /* Pods-SSN.debug.xcconfig */,
+				52157F8214737E8A4393EA93 /* Pods-SSN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C01015CB252D2051001CAC80 = {
 			isa = PBXGroup;
 			children = (
 				C01015D6252D2051001CAC80 /* SSN */,
 				C01015D5252D2051001CAC80 /* Products */,
+				91FE62499F7C50E7D85964FB /* Pods */,
+				D09BCA30FEA25368FB9DCC01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = SSN;
 			sourceTree = "<group>";
 		};
+		D09BCA30FEA25368FB9DCC01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC1A96D70FB7D8B4D20A0C63 /* Pods_SSN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01015E8252D2056001CAC80 /* Build configuration list for PBXNativeTarget "SSN" */;
 			buildPhases = (
+				3FA44C30DE8381A760ECE13A /* [CP] Check Pods Manifest.lock */,
 				C01015D0252D2051001CAC80 /* Sources */,
 				C01015D1252D2051001CAC80 /* Frameworks */,
 				C01015D2252D2051001CAC80 /* Resources */,
+				49F4595AD0F278E1D9CA8FE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FA44C30DE8381A760ECE13A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F4595AD0F278E1D9CA8FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSN/Pods-SSN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSN/Pods-SSN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSN/Pods-SSN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C01015D0252D2051001CAC80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,7 +237,6 @@
 		C01015E6252D2056001CAC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,7 +297,6 @@
 		C01015E7252D2056001CAC80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -284,15 +350,12 @@
 		};
 		C01015E9252D2056001CAC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4592F5B6E24E1A1A2A10C92 /* Pods-SSN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PVN3837CZ9;
 				INFOPLIST_FILE = SSN/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -302,15 +365,12 @@
 		};
 		C01015EA252D2056001CAC80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52157F8214737E8A4393EA93 /* Pods-SSN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PVN3837CZ9;
 				INFOPLIST_FILE = SSN/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

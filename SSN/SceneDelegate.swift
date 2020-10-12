@@ -5,7 +5,7 @@
 //  Created by Gabriela on 06/10/20.
 //  Copyright © 2020 Gabriela Olson. All rights reserved.
 //
-
+import GoogleMobileAds
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

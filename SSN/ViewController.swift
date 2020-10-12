@@ -5,39 +5,40 @@
 //  Created by Gabriela on 06/10/20.
 //  Copyright © 2020 Gabriela Olson. All rights reserved.
 //
+import GoogleMobileAds
+
+
 
 import UIKit
 
 class ViewController: UIViewController {
 
+ 
     
     @IBOutlet weak var logo: UIImageView!
     
-    /*private let banner: GADBannerView = {
+    private let banner: GADBannerView = {
         let banner = GADBannerView()
-        
         banner.adUnitID = "ca-app-pub-9323874687512151/5661133055"
-        
-        
         banner.load(GADRequest())
         banner.backgroundColor = .secondarySystemBackground
         return banner
-    }()*/
+    }()
     
      override func viewDidLoad() {
         super.viewDidLoad()
-        /*GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers =
-        [ "ca-app-pub-9323874687512151~1035492330" ]
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers =
+        ["ca-app-pub-9323874687512151~1035492330"]
         banner.rootViewController = self
-        view.addSubview(banner)*/
+        view.addSubview(banner)
         
         genaratorSSN()
     }
     
-    /*override func viewDidLayoutSubviews() {
+    override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         banner.frame = CGRect(x: 0, y: view.frame.size.height-50, width: view.frame.size.width, height: 50).integral
-    }*/
+    }
         
     
     
