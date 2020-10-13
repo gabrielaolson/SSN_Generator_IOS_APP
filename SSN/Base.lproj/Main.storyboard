@@ -17,58 +17,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="PZu-5c-pmg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PZu-5c-pmg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvI-CB-TSE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="156.66666666666666"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                        <state key="normal" title="Generate SSN">
-                                            <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
-                                            <color key="titleShadowColor" systemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="generateSSN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhR-1N-tqL"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em8-9F-Emh">
-                                        <rect key="frame" x="0.0" y="192.66666666666663" width="375" height="156.33333333333337"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="SSN">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="22"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYZ-UN-S0X">
-                                        <rect key="frame" x="0.0" y="385" width="375" height="156.66666666666663"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Message copied to clipboard.">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="menu" size="14"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSN Validator (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Cuo-0L-b13">
-                                        <rect key="frame" x="0.0" y="577.66666666666663" width="375" height="156.33333333333337"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVK-q1-QfO" userLabel="GenerateButtom">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvI-CB-TSE">
+                                                <rect key="frame" x="46" y="149" width="283" height="57"/>
+                                                <color key="backgroundColor" red="0.14509803921568626" green="0.49803921568627452" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="DSJ-Na-YhZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                                <color key="tintColor" red="0.14509803921568626" green="0.49803921568627452" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Generate SSN">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="titleShadowColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="generateSSN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhR-1N-tqL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" red="0.14509803921568626" green="0.49803921568627452" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="YvI-CB-TSE" secondAttribute="bottom" constant="22" id="FkM-FU-Tr2"/>
+                                            <constraint firstItem="YvI-CB-TSE" firstAttribute="leading" secondItem="IVK-q1-QfO" secondAttribute="leading" constant="46" id="UZ5-Dq-6pz"/>
+                                            <constraint firstItem="YvI-CB-TSE" firstAttribute="centerX" secondItem="IVK-q1-QfO" secondAttribute="centerX" id="vEh-2F-3PT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVW-Oi-ItB" userLabel="SSNNumber">
+                                        <rect key="frame" x="0.0" y="253" width="375" height="228"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em8-9F-Emh">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="SSN">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="22"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYZ-UN-S0X">
+                                                <rect key="frame" x="0.0" y="114" width="367" height="87"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Message copied to clipboard.">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="mYZ-UN-S0X" firstAttribute="top" secondItem="em8-9F-Emh" secondAttribute="bottom" constant="8" symbolic="YES" id="0yJ-Gg-Quo"/>
+                                            <constraint firstAttribute="bottom" secondItem="em8-9F-Emh" secondAttribute="bottom" constant="122" id="4x2-fz-DXz"/>
+                                            <constraint firstItem="mYZ-UN-S0X" firstAttribute="leading" secondItem="YVW-Oi-ItB" secondAttribute="leading" id="7bq-fR-1sT"/>
+                                            <constraint firstItem="em8-9F-Emh" firstAttribute="top" secondItem="YVW-Oi-ItB" secondAttribute="top" id="AJe-fu-Mbh"/>
+                                            <constraint firstAttribute="trailing" secondItem="em8-9F-Emh" secondAttribute="trailing" id="MtO-hv-kbx"/>
+                                            <constraint firstAttribute="bottom" secondItem="mYZ-UN-S0X" secondAttribute="bottom" constant="27" id="NrC-1T-HY5"/>
+                                            <constraint firstAttribute="trailing" secondItem="mYZ-UN-S0X" secondAttribute="trailing" constant="8" id="n4S-vH-qcJ"/>
+                                            <constraint firstItem="em8-9F-Emh" firstAttribute="leading" secondItem="YVW-Oi-ItB" secondAttribute="leading" id="rFj-in-w2Z"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUG-La-ZZt" userLabel="logo">
+                                        <rect key="frame" x="0.0" y="506" width="375" height="228"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSN Generator LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuo-0L-b13">
+                                                <rect key="frame" x="106.66666666666669" y="32" width="162" height="139"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Cuo-0L-b13" firstAttribute="top" secondItem="FUG-La-ZZt" secondAttribute="top" constant="32" id="78I-DW-bZk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cuo-0L-b13" secondAttribute="trailing" constant="106.5" id="Isw-pm-NSi"/>
+                                            <constraint firstItem="Cuo-0L-b13" firstAttribute="leading" secondItem="FUG-La-ZZt" secondAttribute="leading" constant="106.5" id="fG7-yc-T9Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cuo-0L-b13" secondAttribute="bottom" constant="57" id="qhU-24-cOO"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PZu-5c-pmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G4I-mT-vue"/>
-                            <constraint firstItem="PZu-5c-pmg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WU1-e5-cjc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PZu-5c-pmg" secondAttribute="trailing" id="qAD-pD-eTo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PZu-5c-pmg" secondAttribute="bottom" id="wjY-rQ-DmU"/>
+                            <constraint firstItem="PZu-5c-pmg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7aA-1S-8uZ"/>
+                            <constraint firstItem="PZu-5c-pmg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Kyt-eA-kku"/>
+                            <constraint firstItem="PZu-5c-pmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UmY-M5-FRH"/>
+                            <constraint firstItem="PZu-5c-pmg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pqk-W3-WlR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -84,15 +128,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SSN Validator (1)" width="125" height="125"/>
+        <image name="SSN Generator LOGO" width="125" height="125"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
