@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var changeButtom: UIButton!
     @IBAction func generateSSN(_ sender: UIButton) {
-        changeButtom.layer.cornerRadius = 8
+
         sender.alpha = 0.5
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
           // Bring's sender's opacity back up to fully opaque
@@ -48,6 +48,8 @@ class ViewController: UIViewController {
 
     
         func genaratorSSN(){
+            
+            changeButtom.layer.cornerRadius = 8
             func isValidSSN (_ ssn: String) -> Bool{
                 
                 let regexSSN = "^(?!219099999|078051120)(?!666|000|9\\d{2})\\d{3}(?!00)\\d{2}(?!0{4})\\d{4}$"
@@ -89,6 +91,7 @@ class ViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
               // Bring's sender's opacity back up to fully opaque
                 self.copyMessage.alpha = 0
+                
                 
             }
             }
