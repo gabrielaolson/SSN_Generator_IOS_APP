@@ -8,4 +8,4 @@
 
 import Foundation
 
-let codeBanner = "ca-app-pub-9323874687512151/5661133055";
+let codeBanner = "";
