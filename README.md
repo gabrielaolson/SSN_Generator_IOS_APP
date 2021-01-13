@@ -1,2 +1,2 @@
 # SSN_Generator
-Generator of a random SSN (Security Social Number)
+This app Generate a random number of SSN (Security Social Number), and copied the number to the clipboard.
