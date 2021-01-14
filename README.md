@@ -1,5 +1,6 @@
 # SSN_Generator
 This app Generate a random number of SSN (Security Social Number), and copied the number to the clipboard.
+This app can be use to do tests in mobile apps that need a SSN number to test.
 
 With implemetation of a Google AdMob banner
 
