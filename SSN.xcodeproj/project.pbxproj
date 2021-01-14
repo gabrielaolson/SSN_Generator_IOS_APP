@@ -13,7 +13,6 @@
 		C01015DF252D2051001CAC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015DD252D2051001CAC80 /* Main.storyboard */; };
 		C01015E1252D2056001CAC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01015E0252D2056001CAC80 /* Assets.xcassets */; };
 		C01015E4252D2056001CAC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015E2252D2056001CAC80 /* LaunchScreen.storyboard */; };
-		C025513125AF541C0090F424 /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025513025AF541B0090F424 /* code.swift */; };
 		F3D9D7E2006AB80A430EBA58 /* Pods_SSN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1A96D70FB7D8B4D20A0C63 /* Pods_SSN.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		C01015E0252D2056001CAC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01015E3252D2056001CAC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C01015E5252D2056001CAC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C025513025AF541B0090F424 /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 				C01015E0252D2056001CAC80 /* Assets.xcassets */,
 				C01015E2252D2056001CAC80 /* LaunchScreen.storyboard */,
 				C01015E5252D2056001CAC80 /* Info.plist */,
-				C025513025AF541B0090F424 /* code.swift */,
 			);
 			path = SSN;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C025513125AF541C0090F424 /* code.swift in Sources */,
 				C01015DC252D2051001CAC80 /* ViewController.swift in Sources */,
 				C01015D8252D2051001CAC80 /* AppDelegate.swift in Sources */,
 				C01015DA252D2051001CAC80 /* SceneDelegate.swift in Sources */,
