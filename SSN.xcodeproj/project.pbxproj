@@ -13,8 +13,27 @@
 		C01015DF252D2051001CAC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015DD252D2051001CAC80 /* Main.storyboard */; };
 		C01015E1252D2056001CAC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01015E0252D2056001CAC80 /* Assets.xcassets */; };
 		C01015E4252D2056001CAC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01015E2252D2056001CAC80 /* LaunchScreen.storyboard */; };
+		C0C87D3D25E32F9F006C849F /* SSNValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C87D3C25E32F9F006C849F /* SSNValidatorTests.swift */; };
+		C0C87D4725E3392A006C849F /* SSNValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C87D4625E3392A006C849F /* SSNValidator.swift */; };
 		F3D9D7E2006AB80A430EBA58 /* Pods_SSN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1A96D70FB7D8B4D20A0C63 /* Pods_SSN.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0C87D3F25E32F9F006C849F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01015CC252D2051001CAC80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01015D3252D2051001CAC80;
+			remoteInfo = SSN;
+		};
+		C0C87D5525E343D8006C849F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01015CC252D2051001CAC80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01015D3252D2051001CAC80;
+			remoteInfo = SSN;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		52157F8214737E8A4393EA93 /* Pods-SSN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN.release.xcconfig"; path = "Target Support Files/Pods-SSN/Pods-SSN.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +47,11 @@
 		C01015E0252D2056001CAC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01015E3252D2056001CAC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C01015E5252D2056001CAC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C87D3A25E32F9F006C849F /* SSNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C87D3C25E32F9F006C849F /* SSNValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNValidatorTests.swift; sourceTree = "<group>"; };
+		C0C87D3E25E32F9F006C849F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C87D4625E3392A006C849F /* SSNValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNValidator.swift; sourceTree = "<group>"; };
+		C0C87D5025E343D8006C849F /* SSNValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSNValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +60,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D9D7E2006AB80A430EBA58 /* Pods_SSN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D3725E32F9F006C849F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D4D25E343D8006C849F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				C01015D6252D2051001CAC80 /* SSN */,
+				C0C87D3B25E32F9F006C849F /* SSNTests */,
 				C01015D5252D2051001CAC80 /* Products */,
 				91FE62499F7C50E7D85964FB /* Pods */,
 				D09BCA30FEA25368FB9DCC01 /* Frameworks */,
@@ -65,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				C01015D4252D2051001CAC80 /* SSN.app */,
+				C0C87D3A25E32F9F006C849F /* SSNTests.xctest */,
+				C0C87D5025E343D8006C849F /* SSNValidatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,8 +120,18 @@
 				C01015E0252D2056001CAC80 /* Assets.xcassets */,
 				C01015E2252D2056001CAC80 /* LaunchScreen.storyboard */,
 				C01015E5252D2056001CAC80 /* Info.plist */,
+				C0C87D4625E3392A006C849F /* SSNValidator.swift */,
 			);
 			path = SSN;
+			sourceTree = "<group>";
+		};
+		C0C87D3B25E32F9F006C849F /* SSNTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C87D3C25E32F9F006C849F /* SSNValidatorTests.swift */,
+				C0C87D3E25E32F9F006C849F /* Info.plist */,
+			);
+			path = SSNTests;
 			sourceTree = "<group>";
 		};
 		D09BCA30FEA25368FB9DCC01 /* Frameworks */ = {
@@ -113,18 +164,62 @@
 			productReference = C01015D4252D2051001CAC80 /* SSN.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0C87D3925E32F9F006C849F /* SSNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C87D4325E32F9F006C849F /* Build configuration list for PBXNativeTarget "SSNTests" */;
+			buildPhases = (
+				C0C87D3625E32F9F006C849F /* Sources */,
+				C0C87D3725E32F9F006C849F /* Frameworks */,
+				C0C87D3825E32F9F006C849F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C87D4025E32F9F006C849F /* PBXTargetDependency */,
+			);
+			name = SSNTests;
+			productName = SSNTests;
+			productReference = C0C87D3A25E32F9F006C849F /* SSNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0C87D4F25E343D8006C849F /* SSNValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C87D5725E343D8006C849F /* Build configuration list for PBXNativeTarget "SSNValidatorTests" */;
+			buildPhases = (
+				C0C87D4C25E343D8006C849F /* Sources */,
+				C0C87D4D25E343D8006C849F /* Frameworks */,
+				C0C87D4E25E343D8006C849F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C87D5625E343D8006C849F /* PBXTargetDependency */,
+			);
+			name = SSNValidatorTests;
+			productName = SSNValidatorTests;
+			productReference = C0C87D5025E343D8006C849F /* SSNValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C01015CC252D2051001CAC80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Gabriela Olson";
 				TargetAttributes = {
 					C01015D3252D2051001CAC80 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					C0C87D3925E32F9F006C849F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C01015D3252D2051001CAC80;
+					};
+					C0C87D4F25E343D8006C849F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C01015D3252D2051001CAC80;
 					};
 				};
 			};
@@ -142,6 +237,8 @@
 			projectRoot = "";
 			targets = (
 				C01015D3252D2051001CAC80 /* SSN */,
+				C0C87D3925E32F9F006C849F /* SSNTests */,
+				C0C87D4F25E343D8006C849F /* SSNValidatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +251,20 @@
 				C01015E4252D2056001CAC80 /* LaunchScreen.storyboard in Resources */,
 				C01015E1252D2056001CAC80 /* Assets.xcassets in Resources */,
 				C01015DF252D2051001CAC80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D3825E32F9F006C849F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D4E25E343D8006C849F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,10 +320,39 @@
 				C01015DC252D2051001CAC80 /* ViewController.swift in Sources */,
 				C01015D8252D2051001CAC80 /* AppDelegate.swift in Sources */,
 				C01015DA252D2051001CAC80 /* SceneDelegate.swift in Sources */,
+				C0C87D4725E3392A006C849F /* SSNValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D3625E32F9F006C849F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C87D3D25E32F9F006C849F /* SSNValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C87D4C25E343D8006C849F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0C87D4025E32F9F006C849F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01015D3252D2051001CAC80 /* SSN */;
+			targetProxy = C0C87D3F25E32F9F006C849F /* PBXContainerItemProxy */;
+		};
+		C0C87D5625E343D8006C849F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01015D3252D2051001CAC80 /* SSN */;
+			targetProxy = C0C87D5525E343D8006C849F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C01015DD252D2051001CAC80 /* Main.storyboard */ = {
@@ -380,6 +520,94 @@
 			};
 			name = Release;
 		};
+		C0C87D4125E32F9F006C849F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVN3837CZ9;
+				INFOPLIST_FILE = SSNTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSN.app/SSN";
+			};
+			name = Debug;
+		};
+		C0C87D4225E32F9F006C849F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVN3837CZ9;
+				INFOPLIST_FILE = SSNTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSN.app/SSN";
+			};
+			name = Release;
+		};
+		C0C87D5825E343D8006C849F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVN3837CZ9;
+				INFOPLIST_FILE = SSNValidatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSNValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSN.app/SSN";
+			};
+			name = Debug;
+		};
+		C0C87D5925E343D8006C849F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVN3837CZ9;
+				INFOPLIST_FILE = SSNValidatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielaolson.SSNValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSN.app/SSN";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,6 +625,24 @@
 			buildConfigurations = (
 				C01015E9252D2056001CAC80 /* Debug */,
 				C01015EA252D2056001CAC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C87D4325E32F9F006C849F /* Build configuration list for PBXNativeTarget "SSNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C87D4125E32F9F006C849F /* Debug */,
+				C0C87D4225E32F9F006C849F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C87D5725E343D8006C849F /* Build configuration list for PBXNativeTarget "SSNValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C87D5825E343D8006C849F /* Debug */,
+				C0C87D5925E343D8006C849F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

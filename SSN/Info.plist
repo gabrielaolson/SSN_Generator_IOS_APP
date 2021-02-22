@@ -30,7 +30,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>GADAppicationIdentifier</key>
-	<string>&quot;ca-app-pub-3940256099942544/6300978111&quot;</string>
+	<string>&quot;&quot;</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
